@@ -10,7 +10,11 @@ createRoot(document.getElementById("root")).render(
   <AuthProvider>
     <PageProvider>
       <Layout>
-        <App />
+        <>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </>
       </Layout>
     </PageProvider>
   </AuthProvider>,
